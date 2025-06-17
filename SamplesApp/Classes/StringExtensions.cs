@@ -6,6 +6,7 @@ public static partial class StringExtensions
     public static string SplitCase1(this string sender) =>
         string.Join(" ", CaseRegEx().Matches(sender)
             .Select(m => m.Value));
+
     public static string SplitCase2(this string input)
     {
         if (string.IsNullOrEmpty(input)) return input;
