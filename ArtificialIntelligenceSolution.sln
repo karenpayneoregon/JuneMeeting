@@ -53,7 +53,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualStudioExternalToolsAp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unformatted XML", "Unformatted XML", "{2D8910AB-8CFC-0366-FB37-DE1AD8E5DD33}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loggin agents", "Loggin agents", "{9235E3CA-121E-378A-9655-F1844160E557}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging agents", "Logging agents", "{9235E3CA-121E-378A-9655-F1844160E557}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateExample", "TemplateExample\TemplateExample.csproj", "{8F1B021A-FEE2-47C3-5C04-15E30A9CD02D}"
 EndProject
