@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h2 class="my-4">Product Catalog</h2>
+
+<div class="container">
+    <div class="row fw-bold border-bottom pb-2 mb-3">
+        <div class="col-md-3">Category</div>
+        <div class="col-md-3">Product</div>
+        <div class="col-md-2 text-end">Price</div>
+        <div class="col-md-2 text-end">Stock</div>
+    </div>
+
+    @foreach (var product in @Model.Products)
+    {
+        <div class="row align-items-center py-2 border-bottom">
+            <div class="col-md-3">@product.Category.CategoryName</div>
+            <div class="col-md-3">@product.ProductName</div>
+            <div class="col-md-2 text-end">
+                @product.UnitPrice?.ToString("C")
+            </div>
+            <div class="col-md-2 text-end">@product.UnitsInStock</div>
+        </div>
+    }
+</div>

@@ -1,0 +1,149 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generic HTML", "Generic HTML", "{F71C3ED4-8FCF-D705-EFC5-BFADA1571EDE}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FormValidation", "FormValidation\", "{4955CC49-0964-2B50-3F75-04AED4DBEC5F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59460"
+		Debug.AspNetCompiler.PhysicalPath = "FormValidation\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59460\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59460"
+		Release.AspNetCompiler.PhysicalPath = "FormValidation\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59460\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59460"
+		SlnRelativePath = "FormValidation\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DialogsCreatedWithChatGPT", "DialogsCreatedWithChatGPT\", "{B6EDB4A6-4A6A-1EEF-C21D-926C86789DC8}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60040"
+		Debug.AspNetCompiler.PhysicalPath = "DialogsCreatedWithChatGPT\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60040\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60040"
+		Release.AspNetCompiler.PhysicalPath = "DialogsCreatedWithChatGPT\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60040\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60040"
+		SlnRelativePath = "DialogsCreatedWithChatGPT\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dot Net", "Dot Net", "{674529FB-0329-33B5-FEC5-BF13DC066E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualStudioExternalToolsApp", "VisualStudioExternalToolsApp\VisualStudioExternalToolsApp.csproj", "{60C1275B-1676-1212-704E-29DD94B253D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unformatted XML", "Unformatted XML", "{2D8910AB-8CFC-0366-FB37-DE1AD8E5DD33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loggin agents", "Loggin agents", "{9235E3CA-121E-378A-9655-F1844160E557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateExample", "TemplateExample\TemplateExample.csproj", "{8F1B021A-FEE2-47C3-5C04-15E30A9CD02D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class projects", "Class projects", "{512A43AD-4B97-4846-37E2-23CE8D3D8C3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkHelpers", "EntityFramworkHelpers\EntityFrameworkHelpers.csproj", "{99C557EF-D302-7577-B219-2C3705FED2F8}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TimeSelectExample", "TimeSelectExample\", "{FFDCB492-711D-2E05-DA6E-7A095183554E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_63674"
+		Debug.AspNetCompiler.PhysicalPath = "TimeSelectExample\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63674\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_63674"
+		Release.AspNetCompiler.PhysicalPath = "TimeSelectExample\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_63674\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63674"
+		SlnRelativePath = "TimeSelectExample\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demostrations", "Demostrations", "{F384BFE8-9D0C-83EA-F47D-E4752DD9E7E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplesApp", "SamplesApp\SamplesApp.csproj", "{2D4678ED-CFCA-43C7-A17D-EF7E6E7DD67E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{089100B1-113F-4E66-888A-E83F3999EAFD}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4955CC49-0964-2B50-3F75-04AED4DBEC5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4955CC49-0964-2B50-3F75-04AED4DBEC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4955CC49-0964-2B50-3F75-04AED4DBEC5F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{4955CC49-0964-2B50-3F75-04AED4DBEC5F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B6EDB4A6-4A6A-1EEF-C21D-926C86789DC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EDB4A6-4A6A-1EEF-C21D-926C86789DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EDB4A6-4A6A-1EEF-C21D-926C86789DC8}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EDB4A6-4A6A-1EEF-C21D-926C86789DC8}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{60C1275B-1676-1212-704E-29DD94B253D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C1275B-1676-1212-704E-29DD94B253D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C1275B-1676-1212-704E-29DD94B253D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C1275B-1676-1212-704E-29DD94B253D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F1B021A-FEE2-47C3-5C04-15E30A9CD02D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1B021A-FEE2-47C3-5C04-15E30A9CD02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1B021A-FEE2-47C3-5C04-15E30A9CD02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1B021A-FEE2-47C3-5C04-15E30A9CD02D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C557EF-D302-7577-B219-2C3705FED2F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C557EF-D302-7577-B219-2C3705FED2F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C557EF-D302-7577-B219-2C3705FED2F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C557EF-D302-7577-B219-2C3705FED2F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFDCB492-711D-2E05-DA6E-7A095183554E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDCB492-711D-2E05-DA6E-7A095183554E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFDCB492-711D-2E05-DA6E-7A095183554E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDCB492-711D-2E05-DA6E-7A095183554E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2D4678ED-CFCA-43C7-A17D-EF7E6E7DD67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4678ED-CFCA-43C7-A17D-EF7E6E7DD67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4678ED-CFCA-43C7-A17D-EF7E6E7DD67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4678ED-CFCA-43C7-A17D-EF7E6E7DD67E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4955CC49-0964-2B50-3F75-04AED4DBEC5F} = {F71C3ED4-8FCF-D705-EFC5-BFADA1571EDE}
+		{B6EDB4A6-4A6A-1EEF-C21D-926C86789DC8} = {F71C3ED4-8FCF-D705-EFC5-BFADA1571EDE}
+		{60C1275B-1676-1212-704E-29DD94B253D3} = {2D8910AB-8CFC-0366-FB37-DE1AD8E5DD33}
+		{2D8910AB-8CFC-0366-FB37-DE1AD8E5DD33} = {674529FB-0329-33B5-FEC5-BF13DC066E20}
+		{9235E3CA-121E-378A-9655-F1844160E557} = {674529FB-0329-33B5-FEC5-BF13DC066E20}
+		{8F1B021A-FEE2-47C3-5C04-15E30A9CD02D} = {9235E3CA-121E-378A-9655-F1844160E557}
+		{512A43AD-4B97-4846-37E2-23CE8D3D8C3A} = {9235E3CA-121E-378A-9655-F1844160E557}
+		{99C557EF-D302-7577-B219-2C3705FED2F8} = {512A43AD-4B97-4846-37E2-23CE8D3D8C3A}
+		{FFDCB492-711D-2E05-DA6E-7A095183554E} = {F71C3ED4-8FCF-D705-EFC5-BFADA1571EDE}
+		{F384BFE8-9D0C-83EA-F47D-E4752DD9E7E4} = {674529FB-0329-33B5-FEC5-BF13DC066E20}
+		{2D4678ED-CFCA-43C7-A17D-EF7E6E7DD67E} = {F384BFE8-9D0C-83EA-F47D-E4752DD9E7E4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D1C5BC8-86E5-4206-8E23-448F84775B6D}
+	EndGlobalSection
+EndGlobal
