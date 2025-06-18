@@ -44,7 +44,7 @@
 
         <div class="container">
 
-            <fieldset class="fieldset-style shadow">
+            <fieldset class="fieldset-style shadow mb-2">
                 <legend class="legend-style">
                     Select a Time
                 </legend>
@@ -63,8 +63,31 @@
 
         </div>
 
-    </main>
+        <!-- ChatGPT had vh-100 which Karen removed as it was incorrect for this page vh-100 works for vanilla pages -->
 
+        <div class="container  d-flex justify-content-center align-items-center">
+            <div class="card shadow" style="width: 24rem;">
+                <div class="card-header bg-primary text-white">
+                    About
+                </div>
+                <div class="card-body">
+                    <!-- WCAG violation, should be an H2 styled with  fs-4 from Bootstrap-->
+                    <h5 class="card-title">Prototyping</h5>
+                    <p class="card-text">
+                        An example for showing
+                    </p>
+                    <ul>
+                        <li>Using AI to save time</li>
+                        <li>Time input with 30-minute interval</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>s
+
+    </main>
+    
+    <!-- No need to move JS code as we are prototyping -->
     <script>
         document.addEventListener("DOMContentLoaded",
             () => {

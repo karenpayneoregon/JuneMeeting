@@ -431,3 +431,5 @@ Here’s how to display the selected time inside a **Bootstrap 5.3 badge** for a
 * These are standard **Bootstrap 5 contextual classes**, and you can easily swap in `bg-success`, `bg-warning`, etc., if you prefer a different look.
 
 Let me know if you'd like multiple badges, dismissible ones, or a fade-in effect.
+
+---
