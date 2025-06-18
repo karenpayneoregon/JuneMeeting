@@ -1,7 +1,6 @@
 
 using ConfigurationLibrary;
 using Serilog;
-using Serilog.Events;
 using TemplateExample.Data;
 using TemplateExample.Models;
 

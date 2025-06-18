@@ -4,6 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace ConfigurationLibrary;
+
+/// <summary>
+/// Provides configuration options for setting up <see cref="DbContextOptionsBuilder{T}"/> 
+/// in different environments such as Development, Staging, and Production.
+/// </summary>
 public class ContextOptions
 {
 

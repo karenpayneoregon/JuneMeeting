@@ -7,8 +7,26 @@ using Serilog.Events;
 // Ensure this is included for LogEventLevel
 namespace ConfigurationLibrary;
 
+/// <summary>
+/// Provides operations for configuring Serilog logging in an ASP.NET Core application.
+/// </summary>
+/// <remarks>
+/// This class includes methods to set up logging configurations tailored to different environments.
+/// For development environments, logs are written to the console with a minimum log level of Information.
+/// For non-development environments, logs are written to a file with a rolling interval.
+/// </remarks>
 public class SerilogOperations
 {
+    /// <summary>
+    /// Configures Serilog logging for the application based on the environment.
+    /// </summary>
+    /// <param name="builder">
+    /// The <see cref="WebApplicationBuilder"/> used to configure the application's services and middleware.
+    /// </param>
+    /// <remarks>
+    /// In development environments, logs are written to the console with a minimum level of Information.
+    /// In non-development environments, logs are written to a file with a rolling interval.
+    /// </remarks>
     public static void Setup(WebApplicationBuilder builder)
     {
 
