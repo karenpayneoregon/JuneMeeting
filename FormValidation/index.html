@@ -105,8 +105,8 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <label for="validationCustom04" name="selectState" class="form-label required">State</label>
-                        <select class="form-select" id="validationCustom04" required>
+                        <label for="states_select" name="selectState" class="form-label required">State</label>
+                        <select class="form-select" id="states_select" required>
                         </select>
                         <div class="invalid-feedback">
                             Please select a valid state.
@@ -139,16 +139,6 @@
         </div>
 
     </main>
-    <div class="container mt-4">
-        <figure>
-            <blockquote class="blockquote">
-                <p>A well-known quote, contained in a blockquote element.</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-            </figcaption>
-        </figure>
-    </div>
 
 
     <div class="clear"></div>
@@ -171,13 +161,10 @@
 
             });
 
-            document.body.append(
-                $footerHelper.create(
-                    'https://www.oregon.gov/EMPLOY/Pages/default.aspx',
-                    'u=from_uic_lookup', 'e'));
+            document.body.append($footerHelper.create('https://visualstudio.microsoft.com/'));
 
             /* populate state select */
-            const current_state = document.getElementById('validationCustom04');
+            const current_state = document.getElementById('states_select');
 
             states().forEach((option) => {
                 const optionElement = document.createElement('option');
@@ -186,8 +173,8 @@
                 current_state.appendChild(optionElement);
             });
 
-            var x = document.getElementById("validationCustom04").options[0].disabled = true;
-            document.getElementById("validationCustom04").selectedIndex = -1;
+            var x = document.getElementById("states_select").options[0].disabled = true;
+            document.getElementById("states_select").selectedIndex = -1;
         });
 
     </script>

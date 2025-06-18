@@ -3,7 +3,7 @@ using EntityCoreFileLogger;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace EntityFrameworkHelpers;
+namespace ConfigurationLibrary;
 public class ContextOptions
 {
 

@@ -24,7 +24,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\EntityFramworkHelpers\EntityFrameworkHelpers.csproj" />
+	  <ProjectReference Include="..\ConfigurationLibrary\ConfigurationLibrary.csproj" />
 	</ItemGroup>
 
 	<Target Name="MakeLogDir" AfterTargets="Build">

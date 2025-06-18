@@ -1,19 +1,8 @@
-/*
- * The following, creates an instance of the class as needed
- * or uses the existing instance if it already exists.
- *
- * In most cases, the module pattern is the best way to create a singleton.
- */
+
 var $footerHelper = $footerHelper || {};
 $footerHelper = function () {
-    /*
-     * Create footer
-     * Tweaked to ignore location
-     * @param {string} href - URL
-     * @param {string} location - URL from page
-     * @param {string} lang - language
-     */
-    const create = function (href, location, lang = 'e') {
+
+    const create = function (href) {
 
         const footer = document.createElement('footer');
         footer.classList.add('fixed-bottom', 'p-3', 'text-center');
@@ -31,14 +20,12 @@ $footerHelper = function () {
         link.style.fontWeight = 'bold';
 
         link.href = `${href}`;
+        link.target = '_blank';
+        link.setAttribute('aria-label', 'Link to Microsoft Visual Studio home page');
 
-        if (lang === 'e') {
-            link.textContent = 'Return to Employment Department Home';
-        } else if (lang === 's') {
-            link.textContent = 'Regresar a la p&aacute;gina de inicio del Departamento de Empleo';
-        }
+        link.textContent = 'Visit Microsoft Visual Studio home page';
 
-
+        
         div.appendChild(link);
         span.appendChild(div);
         footer.appendChild(span);

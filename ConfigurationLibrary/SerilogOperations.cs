@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
-using Serilog; // Ensure this is included for Log.Logger and LoggerConfiguration
-using Serilog.Events; // Ensure this is included for LogEventLevel
-namespace EntityFrameworkHelpers;
+using Serilog;
+using Serilog.Events;
+// Ensure this is included for Log.Logger and LoggerConfiguration
+
+// Ensure this is included for LogEventLevel
+namespace ConfigurationLibrary;
 
 public class SerilogOperations
 {

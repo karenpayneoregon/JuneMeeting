@@ -1,4 +1,5 @@
-using EntityFrameworkHelpers;
+
+using ConfigurationLibrary;
 using Serilog;
 using Serilog.Events;
 using TemplateExample.Data;
@@ -65,41 +66,5 @@ public class Program
            .WithStaticAssets();
 
         app.Run();
-    }
-
-    /// <summary>
-    /// Configures the logging settings for the application based on the current environment.
-    /// </summary>
-    /// <param name="builder">
-    /// The <see cref="WebApplicationBuilder"/> instance used to configure the application.
-    /// </param>
-    /// <remarks>
-    /// In a development environment, logs are written to the console with a minimum level of information.
-    /// In a production environment, logs are written to a file located in the "LogFiles" directory with a rolling interval.
-    /// </remarks>
-    private static void ConfigureLogging(WebApplicationBuilder builder)
-    {
-        if (builder.Environment.IsDevelopment())
-        {
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-                .MinimumLevel.Override("System", LogEventLevel.Warning)
-                .MinimumLevel.Information()
-                .WriteTo.Console()
-                .CreateLogger();
-        }
-        else
-        {
-            Log.Logger = new LoggerConfiguration()
-                .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-                .MinimumLevel.Override("System", LogEventLevel.Warning)
-                .MinimumLevel.Information()
-                .WriteTo.File(
-                    Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "LogFiles",
-                        $"{DateTime.Now.Year}-{DateTime.Now.Month:d2}-{DateTime.Now.Day:d2}", "Log.txt"),
-                    rollingInterval: RollingInterval.Infinite,
-                    outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level}] {Message}{NewLine}{Exception}")
-                .CreateLogger();
-        }
     }
 }

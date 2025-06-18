@@ -1,6 +1,9 @@
 ﻿using System.Text.RegularExpressions;
 
 namespace SamplesApp.Classes;
+/// <summary>
+/// Example of optimizing string operations.
+/// </summary>
 public static partial class StringExtensions
 {
     public static string SplitCase1(this string sender) =>
