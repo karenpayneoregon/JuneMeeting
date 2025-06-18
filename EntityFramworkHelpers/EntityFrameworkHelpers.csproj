@@ -12,6 +12,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Folder Include="images\" />
 	</ItemGroup>
 </Project>

@@ -10,6 +10,15 @@ public class IndexModel(Context context) : PageModel
 {
     [BindProperty]
     public required List<Products> Products { get; set; }
+
+    /// <summary>
+    /// Handles GET requests for the Index page.
+    /// </summary>
+    /// <remarks>
+    /// This method retrieves a list of products from the database, including their associated categories.
+    /// The products are ordered by category name and then by product name.
+    /// Additionally, the SQL query used for fetching the data is logged for debugging purposes.
+    /// </remarks>
     public void OnGet()
     {
         Products = context.Products.Include(x => x.Category)
