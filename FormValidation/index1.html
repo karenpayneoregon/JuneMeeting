@@ -82,8 +82,8 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <label for="validationCustom04" name="selectState" class="form-label required">State</label>
-                        <select class="form-select" id="validationCustom04" required>
+                        <label for="state_select" name="selectState" class="form-label required">State</label>
+                        <select class="form-select" id="state_select" required>
                         </select>
                         <div class="invalid-feedback">
                             Please select a valid state.
@@ -120,34 +120,114 @@
     <div class="clear"></div>
 
     <script>
-        document.addEventListener("DOMContentLoaded",
-            () => {
+        document.addEventListener("DOMContentLoaded", () => {
 
-                const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-                setLanguage(savedLang);
-                document.addEventListener('keydown',
-                    function (event) {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            setLanguage(savedLang);
 
-                        if (event.key === '1' && event.altKey && event.ctrlKey) {
-                            // this is for development environment
-                            $debugHelper.toggle(true);
-                        }
+            populateStates("MI");
+            document.addEventListener('keydown',
+                function (event) {
 
-                    });
+                    if (event.key === '1' && event.altKey && event.ctrlKey) {
+                        // this is for development environment
+                        $debugHelper.toggle(true);
+                    }
+
+                });
 
 
-            });
+        });
 
     </script>
     <script>
         function setLanguage(lang) {
+            
             localStorage.setItem('preferredLanguage', lang);
             document.documentElement.lang = lang;
             document.querySelectorAll('[data-en]').forEach(el => {
                 el.textContent = el.getAttribute(`data-${lang}`);
             });
         }
+
+
+
     </script>
+
+
+    <script>
+
+        function populateStates(defaultCode = "") {
+            const states = [
+                { code: "AL", name: "Alabama" },
+                { code: "AK", name: "Alaska" },
+                { code: "AZ", name: "Arizona" },
+                { code: "AR", name: "Arkansas" },
+                { code: "CA", name: "California" },
+                { code: "CO", name: "Colorado" },
+                { code: "CT", name: "Connecticut" },
+                { code: "DE", name: "Delaware" },
+                { code: "FL", name: "Florida" },
+                { code: "GA", name: "Georgia" },
+                { code: "HI", name: "Hawaii" },
+                { code: "ID", name: "Idaho" },
+                { code: "IL", name: "Illinois" },
+                { code: "IN", name: "Indiana" },
+                { code: "IA", name: "Iowa" },
+                { code: "KS", name: "Kansas" },
+                { code: "KY", name: "Kentucky" },
+                { code: "LA", name: "Louisiana" },
+                { code: "ME", name: "Maine" },
+                { code: "MD", name: "Maryland" },
+                { code: "MA", name: "Massachusetts" },
+                { code: "MI", name: "Michigan" },
+                { code: "MN", name: "Minnesota" },
+                { code: "MS", name: "Mississippi" },
+                { code: "MO", name: "Missouri" },
+                { code: "MT", name: "Montana" },
+                { code: "NE", name: "Nebraska" },
+                { code: "NV", name: "Nevada" },
+                { code: "NH", name: "New Hampshire" },
+                { code: "NJ", name: "New Jersey" },
+                { code: "NM", name: "New Mexico" },
+                { code: "NY", name: "New York" },
+                { code: "NC", name: "North Carolina" },
+                { code: "ND", name: "North Dakota" },
+                { code: "OH", name: "Ohio" },
+                { code: "OK", name: "Oklahoma" },
+                { code: "OR", name: "Oregon" },
+                { code: "PA", name: "Pennsylvania" },
+                { code: "RI", name: "Rhode Island" },
+                { code: "SC", name: "South Carolina" },
+                { code: "SD", name: "South Dakota" },
+                { code: "TN", name: "Tennessee" },
+                { code: "TX", name: "Texas" },
+                { code: "UT", name: "Utah" },
+                { code: "VT", name: "Vermont" },
+                { code: "VA", name: "Virginia" },
+                { code: "WA", name: "Washington" },
+                { code: "WV", name: "West Virginia" },
+                { code: "WI", name: "Wisconsin" },
+                { code: "WY", name: "Wyoming" }
+            ];
+
+            const select = document.getElementById("state_select");
+
+            states.forEach(state => {
+                const option = document.createElement("option");
+                option.value = state.code;
+                option.textContent = `${state.code} - ${state.name}`;
+
+                if (state.code === defaultCode) {
+                    option.selected = true;
+                }
+
+                select.appendChild(option);
+            });
+        }
+    </script>
+
+
 
 </body>
 </html>
