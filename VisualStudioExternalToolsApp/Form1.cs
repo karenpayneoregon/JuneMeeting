@@ -27,17 +27,16 @@ public partial class Form1 : Form
         _bindingList = new BindingList<ExternalTool>(tools);
         _bindingSource.DataSource = _bindingList;
 
-        NameTextBox.DataBindings.Add("Text", _bindingSource, "Name", true, DataSourceUpdateMode.OnPropertyChanged);
-        CommandTextBox.DataBindings.Add("Text", _bindingSource, "Command", true, DataSourceUpdateMode.OnPropertyChanged);
-        TitleTextBox.DataBindings.Add("Text", _bindingSource, "Title", true, DataSourceUpdateMode.OnPropertyChanged);
-        InitialDirectoryTextBox.DataBindings.Add("Text", _bindingSource, "InitialDirectory", true, DataSourceUpdateMode.OnPropertyChanged);
+        NameTextBox.DataBindings.Add("Text", _bindingSource, nameof(ExternalTool.Name), true, DataSourceUpdateMode.OnPropertyChanged);
+        CommandTextBox.DataBindings.Add("Text", _bindingSource, nameof(ExternalTool.Command), true, DataSourceUpdateMode.OnPropertyChanged);
+        TitleTextBox.DataBindings.Add("Text", _bindingSource, nameof(ExternalTool.Title), true, DataSourceUpdateMode.OnPropertyChanged);
+        InitialDirectoryTextBox.DataBindings.Add("Text", _bindingSource, nameof(ExternalTool.InitialDirectory), true, DataSourceUpdateMode.OnPropertyChanged);
 
         BindingNavigator1.BindingSource = _bindingSource;
     }
 
     private void OpenSourceFileButton_Click(object sender, EventArgs e)
     {
-        
         var fileOperations = new FileOperations();
         fileOperations.OpenSettingsFile(EnvironmentSettings.Instance.FileName);
     }

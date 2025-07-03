@@ -13,6 +13,7 @@ internal class Person
 public class Address
 {
     public int AddressIdentifier { get; set; }
+
 }
 
 public class Country
